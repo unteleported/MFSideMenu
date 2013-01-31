@@ -133,16 +133,16 @@
     
     [containerView insertSubview:menuView belowSubview:windowRootView];
     
-    [menuView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    self.topConstraint = [[self class] edgeConstraint:NSLayoutAttributeTop subview:menuView];
-    self.rightConstraint = [[self class] edgeConstraint:NSLayoutAttributeRight subview:menuView];
-    self.bottomConstraint = [[self class] edgeConstraint:NSLayoutAttributeBottom subview:menuView];
-    self.leftConstraint = [[self class] edgeConstraint:NSLayoutAttributeLeft subview:menuView];
+    // [menuView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    // self.topConstraint = [[self class] edgeConstraint:NSLayoutAttributeTop subview:menuView];
+    // self.rightConstraint = [[self class] edgeConstraint:NSLayoutAttributeRight subview:menuView];
+    // self.bottomConstraint = [[self class] edgeConstraint:NSLayoutAttributeBottom subview:menuView];
+    // self.leftConstraint = [[self class] edgeConstraint:NSLayoutAttributeLeft subview:menuView];
     
-    [containerView addConstraint:self.topConstraint];
-    [containerView addConstraint:self.rightConstraint];
-    [containerView addConstraint:self.bottomConstraint];
-    [containerView addConstraint:self.leftConstraint];
+    // [containerView addConstraint:self.topConstraint];
+    // [containerView addConstraint:self.rightConstraint];
+    // [containerView addConstraint:self.bottomConstraint];
+    // [containerView addConstraint:self.leftConstraint];
     
     // we need to reorient from the status bar here incase the initial orientation is landscape
     [self orientSideMenuFromStatusBar];
